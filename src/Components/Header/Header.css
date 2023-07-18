@@ -1,0 +1,88 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.containerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 5vw;
+    background-color: #F7F8FA;
+    border-bottom: 3px solid #EDEFF2;
+}
+
+.brandHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #4D5E80;
+}
+
+.brandHeader i{
+    color: #4A55A2;
+    font-size: 30px;
+}
+
+/* boton home */
+.btn-Home{
+    background-color: #F7F8FA;
+    border-radius: 25px;
+    padding: 0.7vh 0.5vw;
+    border: 2px solid #4D5E80;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+}
+
+.btn-Home:hover, .btn-Home:focus, .btn-Home:active{
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+.navBarHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    text-decoration: none;
+}
+
+/* link de contacto y su hover */
+.contactNavLink{
+    color:#4A55A2;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+
+.contactNavLink:after{
+    content: "";
+    position: absolute;
+    background-color: #4A55A2;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.contactNavLink:hover:after{
+    width: 100%;
+}
+
+
+.bi-cart-fill{
+    color:#4A55A2;
+}
+
+.bi-house-door-fill{
+    color:#4A55A2;
+    font-size: 25px;
+}

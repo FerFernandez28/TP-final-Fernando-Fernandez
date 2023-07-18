@@ -1,0 +1,57 @@
+
+.containerFooter{
+    display: flex;
+    justify-content: center;
+    gap: 10.3vw;
+    background-color: #F7F8FA;
+    border-top: 3px solid #EDEFF2;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* primer columna */
+.primerColumna{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    cursor: default;
+}
+
+.primerColumna h2{
+    color: #4D5E80;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 166.667% */
+}
+
+.primerColumna p{
+    color: #ADB8CC;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 214.286% */
+}
+
+/* columnas del medio */
+.columnasMedio{
+    color: #6B7A99;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 214.286% */
+    cursor: pointer;
+}
+
+/* tercer columnas */
+.tercerColumna{
+    color:  #ADB8CC;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 166.667% */
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    cursor: default;
+}

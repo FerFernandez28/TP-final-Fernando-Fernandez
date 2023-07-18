@@ -1,0 +1,91 @@
+
+
+.tituloCart{
+    /* background-color: #F7F8FA; */
+    width: 100%;
+    padding: 4vh 0vw;
+}
+
+.tituloCart h2{
+    display: flex;
+    justify-content: baseline;
+    padding-left: 34vh;
+    color: #4D5E80;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.containerTitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F8FA;
+}
+
+.containerCarrito{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    /* background-color: yellow; */
+}
+
+.productosCarrito{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 260vh;
+    width: 43vw;
+    gap: 1vw;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    /* background-color: green; */
+}
+
+/* columna Total */
+.containerTotal{
+    width: 20vw;
+    height: 23vh;
+    margin-top: 30px;
+    /* background-color: violet; */
+    border-left: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+.subtotalInfo{
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+    font-size: 16px;
+    color: #4D5E80;
+}
+
+.btn-Checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+.btn-Checkout p{
+    word-wrap: break-word;
+    text-align: left;
+    /* word-break: break-all; */
+    font-size: 18px;
+    color: #4D5E80;
+    padding-left: 22px;
+}
+
+.btn-Checkout button{
+    width: 17vw;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid #4D5E80;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #4D5E80;
+}

@@ -1,0 +1,101 @@
+/* .fomularioContainer{
+    
+} */
+
+.formularioUsuario{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 52vh;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 13vh;
+    gap: 2vh;
+    border: 3px solid #4D5E80;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+}
+
+.formularioUsuario h2{
+    color:  #4D5E80;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; 
+}
+
+
+.formularioUsuario div{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.formularioUsuario label{
+    font-size: 15px;
+    font-weight: 500;
+    background-color: white;
+    color: #586870;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.inputNombre-Email{
+    border: 0.5px solid  #C0C6C9;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: white;
+    outline: none;
+    padding: 10px 10px;
+    width: 35vw;    
+}
+
+.inputMensaje{
+    border: 0.5px solid  #C0C6C9;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: white;
+    outline: none;
+    padding: 10px 10px;
+    height: 10vh;
+    vertical-align: top;
+}
+
+/* boton de send */
+.btn-Submit{
+    width: 10vw;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid #4D5E80;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #4D5E80;
+}
+
+/* alerta fade out */
+.alert-fade{
+    display: flex;
+    color: #4D5E80;
+    font-size: 20px;
+    font-weight: 500;
+    width: 35vw;
+    animation: fadeOut 5s ease-in;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.bi-send-check-fill{
+    color: green;
+}

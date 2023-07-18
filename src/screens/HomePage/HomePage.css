@@ -1,0 +1,83 @@
+
+:root{
+    --color-principal:#F7F8FA;
+    --color-secundario:#EDEFF2;
+    --color-terciario:#4D5E80;
+    /* --color-principal:#F7F8FA; */
+}
+.homePageContainer{
+    background-color: var(--color-principal);
+}
+.containerGibson{
+    color: var(--color-terciario);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 120px;
+    display: flex;
+    gap: 20vw;
+}
+
+.containerInput{
+    position: relative;
+}
+
+.bi-search{
+    position: absolute;
+    font-size: 20px;
+    left: 10px;
+    top: 8px;
+}
+
+.inputHomePage{
+    padding: 1vh 2vw;
+    width: 350px;
+    height: 4.5vh;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
+    color: rgb(83, 83, 83);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.inputHomePage::placeholder {
+    color: #ADB8CC; /* Color del marcador de posición */
+}
+
+.inputHomePage:focus {
+    outline: none;
+}
+
+/* columnas de los productos y los filtradores */
+.colorCardContainer{
+    display: flex;
+    padding-bottom: 30px;
+}
+
+/* columna de los productos */
+.colorCardInfo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 240vh;
+    width: 67vw;
+    gap: 2vw;
+    margin-left: 120px;
+    margin-bottom: 10px;
+}
+
+.filtrador{
+    background-color: #4D5E80;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+    border-radius: 30px;
+    height: 35vh;
+}
+
