@@ -1,6 +1,3 @@
-/* .fomularioContainer{
-    
-} */
 
 .formularioUsuario{
     display: flex;
@@ -14,7 +11,7 @@
     border: 3px solid #4D5E80;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
 }
 
 .formularioUsuario h2{
@@ -81,9 +78,9 @@
 .alert-fade{
     display: flex;
     color: #4D5E80;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
-    width: 35vw;
+    width: 100%;
     animation: fadeOut 5s ease-in;
 }
 
@@ -96,6 +93,33 @@
     }
 }
 
-.bi-send-check-fill{
-    color: green;
+@media (max-width:500px) {
+    .formularioUsuario{
+        width: 80%;
+        height: 65vh;
+        gap: 3vh;
+        margin-top: 12vh;
+    }
+    .formularioUsuario h2{
+        font-size: 25px;
+    }
+    
+    .formularioUsuario label{
+        font-size: 18px;
+    }
+    .inputNombre-Email{
+        font-size: 16px;
+        width: 50vw;    
+    }
+    .btn-Submit{
+        width: 25vw;
+        font-size: 14px;
+    }
+    .alert-fade{
+        font-size: 22px;
+        align-items: center;
+        width: 100%;
+        padding-top: 20px;
+    }
 }
+

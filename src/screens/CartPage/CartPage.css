@@ -15,13 +15,6 @@
     font-weight: 300;
 }
 
-.containerTitulo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F7F8FA;
-}
-
 .containerCarrito{
     display: flex;
     justify-content: center;
@@ -88,4 +81,43 @@
     font-size: 15px;
     font-weight: 500;
     color: #4D5E80;
+
+}
+
+@media (max-width:500px){
+    .tituloCart h2{
+        justify-content: center;
+        padding: 0px;
+    }
+    .containerCarrito{
+        flex-direction: column;
+        align-items: center;
+    }
+    .productosCarrito{
+        max-height: unset;
+        width: 80%;
+        gap: 3vw;
+        margin-bottom: 0px;
+        background-color: yellow;
+    }
+    .containerTotal{
+        width: 80%;
+        height: 23vh;
+        margin-bottom: 40px;
+        background-color: yellow;
+        border: 2px solid black;
+        border-radius:10px;
+        gap: 2vh;
+    }
+    .subtotalInfo{
+        gap: 35vw;
+        background-color: yellowgreen;
+        padding: 10px;
+    }
+    .btn-Checkout p{
+        text-align: center;
+        font-size: 17px;
+        padding-left: 0px;
+    }
+    
 }

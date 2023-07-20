@@ -2,7 +2,7 @@
 .containerFooter{
     display: flex;
     justify-content: center;
-    gap: 10.3vw;
+    gap: 12.9vw;
     background-color: #F7F8FA;
     border-top: 3px solid #EDEFF2;
     padding-top: 60px;
@@ -34,6 +34,10 @@
 }
 
 /* columnas del medio */
+.containerColumnasMedio{
+    display: flex;
+    gap: 10vw;
+}
 .columnasMedio{
     color: #6B7A99;
     font-size: 14px;
@@ -54,4 +58,30 @@
     flex-direction: column;
     gap: 2vh;
     cursor: default;
+}
+
+
+@media (max-width: 500px) {
+    .containerFooter{
+        flex-direction: column;
+        padding: 55px;
+        gap: 4vh;
+    }
+    .primerColumna h2{        
+        font-size: 20px;
+    }
+    .primerColumna p{
+        font-size: 12px;
+    }
+    .containerColumnasMedio{
+        gap: 5vw;
+    }
+    .columnasMedio{
+        font-size: 13px;
+    }
+    .tercerColumna{
+        font-size: 12px;
+        font-weight: 700;
+        gap: 1vh;
+    }
 }

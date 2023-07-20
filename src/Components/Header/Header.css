@@ -1,6 +1,5 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* container Header */
 .containerHeader{
     display: flex;
     justify-content: space-between;
@@ -10,6 +9,7 @@
     border-bottom: 3px solid #EDEFF2;
 }
 
+/* contenedor Your Brand + circulo*/
 .brandHeader{
     display: flex;
     justify-content: center;
@@ -85,4 +85,35 @@
 .bi-house-door-fill{
     color:#4A55A2;
     font-size: 25px;
+}
+
+
+@media (max-width: 500px) {
+    /* containerHeader */
+    .containerHeader {
+        display: flex;
+        padding: 30px;
+    }
+    /* contenedor Your Brand */
+    .brandHeader {
+    font-size: 16px;
+    }
+    .brandHeader i{
+        display: none;
+    }
+    /* boton home */
+    .btn-Home{
+        border-radius: 20px;
+        padding: 0.4vh 1.5vw;
+        
+    }
+    .navBarHeader{
+        gap: 10vw;;
+    }
+    .contactNavLink{
+        font-size: 18px;
+    }
+    .bi-cart-fill{
+        font-size: 20px;
+    }
 }

@@ -1,21 +1,15 @@
-
-:root{
-    --color-principal:#F7F8FA;
-    --color-secundario:#EDEFF2;
-    --color-terciario:#4D5E80;
-    /* --color-principal:#F7F8FA; */
-}
+/* container main */
 .homePageContainer{
     background-color: var(--color-principal);
 }
 .containerGibson{
-    color: var(--color-terciario);
+    color: var(--color-secundario);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     padding-top: 50px;
     padding-bottom: 50px;
-    padding-left: 120px;
+    padding-left: 115px;
     display: flex;
     gap: 20vw;
 }
@@ -30,6 +24,7 @@
     left: 10px;
     top: 8px;
 }
+
 
 .inputHomePage{
     padding: 1vh 2vw;
@@ -67,17 +62,37 @@
     max-height: 240vh;
     width: 67vw;
     gap: 2vw;
-    margin-left: 120px;
+    margin-left: 115px;
     margin-bottom: 10px;
+    
 }
 
-.filtrador{
-    background-color: #4D5E80;
-    margin-left: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 10vw;
-    border-radius: 30px;
-    height: 35vh;
+.h2NingunProducto{
+    font-size: 30px;
+    color: var(--color-secundario);
 }
 
+
+@media (max-width:500px){
+    .containerGibson{
+        padding: 40px;
+        font-size: 13px;
+        gap: 10vw;
+        align-items: center;
+    }
+    .inputHomePage{
+        padding: 1vh 8vw;
+        width: 280px;
+        font-size: 12px;
+    }
+    .colorCardInfo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: unset;
+        width: 80vw;
+        gap: 2vw;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+}
