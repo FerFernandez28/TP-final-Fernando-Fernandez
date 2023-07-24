@@ -3,20 +3,20 @@
     display: flex;
     flex-direction: column;
     width: 50vw;
-    height: 52vh;
+    height: 63vh;
     background-color: white;
     margin: 0 auto;
     margin-top: 13vh;
     gap: 2vh;
-    border: 3px solid #4D5E80;
+    border: 3px solid var(--color-secundario);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
 }
 
 .formularioUsuario h2{
-    color:  #4D5E80;
-    font-size: 20px;
+    color:  var(--color-secundario);
+    font-size: 22px;
     font-style: normal;
     font-weight: 600;
     line-height: 120%; 
@@ -31,17 +31,17 @@
 }
 
 .formularioUsuario label{
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     background-color: white;
-    color: #586870;
+    color: #866e54;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.inputNombre-Email{
-    border: 0.5px solid  #C0C6C9;
+.inputNombre-Email-Asunto{
+    border: 0.5px solid  #866e54;
     border-radius: 10px;
     font-size: 18px;
     background-color: white;
@@ -51,7 +51,7 @@
 }
 
 .inputMensaje{
-    border: 0.5px solid  #C0C6C9;
+    border: 0.5px solid  #866e54;
     border-radius: 10px;
     font-size: 18px;
     background-color: white;
@@ -66,19 +66,20 @@
     width: 10vw;
     margin: auto;
     padding: 10px;
-    border: 2px solid #4D5E80;
+    border: 2px solid var(--color-secundario);
     border-radius: 20px;
     cursor: pointer;
     font-size: 15px;
     font-weight: 500;
-    color: #4D5E80;
+    background-color: var(--color-principal);
+    color: var(--color-secundario);
 }
 
 /* alerta fade out */
 .alert-fade{
     display: flex;
-    color: #4D5E80;
-    font-size: 25px;
+    color: var(--color-secundario);
+    font-size: 24px;
     font-weight: 500;
     width: 100%;
     animation: fadeOut 5s ease-in;

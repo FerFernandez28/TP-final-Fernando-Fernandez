@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useCustomContext } from '../../ContextProvider/ContextProvider'
 import { Footer, ProductCard } from '../../Components'
 import './HomePage.css'
+import FotoGuitarra from '../../Assets/Img/FotoGuitarra.png'
 
 
 const HomePage = () => {
@@ -16,10 +17,16 @@ const HomePage = () => {
     return (        
         <main className='homePageContainer'>
             <div className='containerGibson'>
-                <h1>Gibson Store</h1>
+                <div className='titulos'>
+                    <h1>Gibson Store</h1>
+                    <h2>Guitar World</h2>
+                </div>
+                <div className='containerImagenPrincipal'>
+                    <img src={FotoGuitarra} />
+                </div>
                 <div className='containerInput'>
                     <i className="bi bi-search"></i>
-                    {<input className='inputHomePage' type="text" placeholder='Search Products...' value={searchProduct} onChange={(e)=>setSearchProduct(e.target.value)} />}
+                    {<input className='inputHomePage' type="text" placeholder='Search Category...' value={searchProduct} onChange={(e)=>setSearchProduct(e.target.value)} />}
                 </div>
             </div>
             <div className='colorCardContainer'>

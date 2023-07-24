@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
 body{
@@ -13,8 +14,8 @@ body{
 }
 
 :root{
-    --color-principal: #F7F8FA;
-    --color-secundario: #4D5E80;
-    --color-terciario: #6B7A99;
+    --color-principal: #DFD7BF;
+    --color-secundario: #3F2305;
+    --color-terciario: #9E9A8C;
 }
 

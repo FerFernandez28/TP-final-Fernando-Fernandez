@@ -2,25 +2,38 @@
     background-color: white;
     width: 400px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 2vh 2vw;
+    padding: 2vh 1vw;
     border-radius: 12px;
-    gap: 2vw;
+    gap: 1vw;
     cursor: pointer;
-    border: 3px solid var(--color-terciario);
-    overflow: hidden;
+    border: 3px solid var(--color-secundario);
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+}
+
+.productoCartCardContainer:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+
+.productoCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .productoCartCardInfo{
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 1vh;
+    gap: 2vh;
 }
 
 .productoCartCardInfo h3{
-    color:  #6B7A99;    
+    color:  #866e54;    
     font-size: 14px;
     font-style: normal;
     font-weight: 900;
@@ -28,10 +41,22 @@
 }
 
 .productoCartCardInfo h2{
-    color: #4D5E80;
+    color: var(--color-secundario);
 }
 
 .productoCartCardInfo p{
-    color:  #6B7A99; 
+    color:  var(--color-secundario); 
     font-weight: 500;
+}
+
+.btn-Remove{
+    background-color: violet;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--color-secundario);
+    background-color: var(--color-principal);
 }

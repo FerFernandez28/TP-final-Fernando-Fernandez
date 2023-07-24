@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Header.css'
 import { NavLink, Route, Routes } from 'react-router-dom'
 import { useCustomContext } from '../../ContextProvider/ContextProvider'
+import LogoImg from '../../Assets/Img/LogoImg.png'
 
 const NavBar = () => {
     const {products} = useCustomContext()
@@ -14,10 +15,9 @@ const NavBar = () => {
     return (
         <header className='containerHeader'>
             <div className='brandHeader'>
-                <i className="bi bi-circle-fill"></i>
-                <h2>Your brand</h2>
+                <img src={LogoImg}/>
             </div>
-            <div>
+            <div className='contenedorBtn'>
                 <NavLink to='/'><button className='btn-Home'><i className="bi bi-house-door-fill"></i></button></NavLink>   
             </div>
             <nav className='navBarHeader'>

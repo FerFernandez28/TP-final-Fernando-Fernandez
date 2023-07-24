@@ -1,7 +1,6 @@
 
 
 .tituloCart{
-    /* background-color: #F7F8FA; */
     width: 100%;
     padding: 4vh 0vw;
 }
@@ -10,28 +9,26 @@
     display: flex;
     justify-content: baseline;
     padding-left: 34vh;
-    color: #4D5E80;
+    color: var(--color-secundario);
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .containerCarrito{
     display: flex;
     justify-content: center;
     gap: 3vw;
-    /* background-color: yellow; */
 }
 
 .productosCarrito{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 260vh;
+    max-height: 300vh;
     width: 43vw;
     gap: 1vw;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     margin-top: 30px;
-    /* background-color: green; */
 }
 
 /* columna Total */
@@ -39,7 +36,6 @@
     width: 20vw;
     height: 23vh;
     margin-top: 30px;
-    /* background-color: violet; */
     border-left: 2px solid black;
     display: flex;
     flex-direction: column;
@@ -51,37 +47,47 @@
     display: flex;
     align-items: center;
     gap: 10vw;
-    font-size: 16px;
-    color: #4D5E80;
+    font-size: 18px;
+    color: var(--color-secundario);
 }
 
 .btn-Checkout{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2vh;
+    gap: 3vh;
 }
 
 .btn-Checkout p{
-    word-wrap: break-word;
     text-align: left;
-    /* word-break: break-all; */
     font-size: 18px;
-    color: #4D5E80;
-    padding-left: 22px;
+    color: #866e54;
+    padding-left: 20px;
 }
 
 .btn-Checkout button{
-    width: 17vw;
+    width: 18vw;
     margin: auto;
     padding: 10px;
-    border: 2px solid #4D5E80;
-    border-radius: 15px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
-    color: #4D5E80;
+    color: white;
+    background-color: var(--color-terciario);
+}
 
+.emptyCart{
+    /* background-color: yellow; */
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptyCart h2{
+    color: var(--color-secundario);
 }
 
 @media (max-width:500px){

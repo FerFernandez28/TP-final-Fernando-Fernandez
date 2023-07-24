@@ -20,7 +20,7 @@ const Counter = ({initialValue, stock, id}) => {
                 <span>{quantity}</span>
                 <button className='btnMenosMas' onClick={()=>setQuantity(quantity === stock ? quantity  : quantity + 1)}>+</button>
             </div>
-            <button className='btn-Comprar' onClick={onClickAddProduct}><span>Comprar</span></button>
+            <button className='btn-Comprar' onClick={onClickAddProduct}><span>Add to cart</span></button>
         </>
     )
 }

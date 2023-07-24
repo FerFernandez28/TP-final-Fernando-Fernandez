@@ -5,13 +5,14 @@ const ContactPage = () => {
   const [formUserData, setFormUserData] = useState({
     nombre:'',
     email:'',
+    asunto:'',
     mensaje:''
   })
 
   const [showAlert, setShowAlert] = useState(false)
   const handleRegisterUser = (e) => {
     e.preventDefault()
-    if (formUserData.nombre === '' || formUserData.email === '' || formUserData.mensaje === '') {
+    if (formUserData.nombre === '' || formUserData.email === '' || formUserData.asunto === '' || formUserData.mensaje === '') {
       alert('Por favor, complete todos los campos del formulario.');
       return;
     }  
@@ -19,6 +20,7 @@ const ContactPage = () => {
     setFormUserData({
       nombre:'',
       email:'',
+      asunto:'',
       mensaje:''
     })
     setTimeout(() => {
@@ -35,11 +37,15 @@ const ContactPage = () => {
         <h2>Contact</h2>
         <div>
           <label htmlFor="nombre">Full Name*</label>
-          <input className='inputNombre-Email' type="text"  placeholder='Santiago Falbi' name='nombre' id='nombre' onChange={handleChangeRegisterUser} value={formUserData.nombre} />
+          <input className='inputNombre-Email-Asunto' type="text"  placeholder='Santiago Falbi' name='nombre' id='nombre' onChange={handleChangeRegisterUser} value={formUserData.nombre} />
         </div>
         <div>
           <label htmlFor="email">Email*</label>
-          <input className='inputNombre-Email' type="email" placeholder='...@gmail.com' name='email' id='email' onChange={handleChangeRegisterUser} value={formUserData.email}/>
+          <input className='inputNombre-Email-Asunto' type="email" placeholder='Santiago Falbi@gmail.com' name='email' id='email' onChange={handleChangeRegisterUser} value={formUserData.email}/>
+        </div>
+        <div>
+          <label htmlFor="asunto">Subject*</label>
+          <input className='inputNombre-Email-Asunto' type="text"  placeholder='Fender guitar price' name='asunto' id='asunto' onChange={handleChangeRegisterUser} value={formUserData.asunto} />
         </div>
         <div>
           <label htmlFor="mensaje">Message*</label>

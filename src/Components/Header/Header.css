@@ -4,33 +4,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3vh 5vw;
-    background-color: #F7F8FA;
-    border-bottom: 3px solid #EDEFF2;
+    background-color: var(--color-terciario);
+    border-bottom: 3px solid var(--color-secundario);
 }
 
 /* contenedor Your Brand + circulo*/
 .brandHeader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    font-size: 18px;
-    font-weight: 700;
-    color: #4D5E80;
+    margin-left: 70px;
 }
 
-.brandHeader i{
-    color: #4A55A2;
-    font-size: 30px;
+.brandHeader img{
+    width: 200px;
+    height: 120px;
 }
 
 /* boton home */
+.contenedorBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn-Home{
-    background-color: #F7F8FA;
+    background-color: white;
     border-radius: 25px;
+  /*   margin-right: 0px; */
     padding: 0.7vh 0.5vw;
-    border: 2px solid #4D5E80;
+    border: 2px solid var(--color-secundario);
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     -webkit-transition-duration: 0.3s;
@@ -44,20 +44,20 @@
     transform: scale(1.1);
 }
 
-
-
 .navBarHeader{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 4vw;
+    margin-right: 70px;
     text-decoration: none;
 }
 
 /* link de contacto y su hover */
 .contactNavLink{
-    color:#4A55A2;
+    color:var(--color-secundario);
     text-decoration: none;
+    font-size: 22px;
     font-weight: 600;
     position: relative;
 }
@@ -65,7 +65,7 @@
 .contactNavLink:after{
     content: "";
     position: absolute;
-    background-color: #4A55A2;
+    background-color: var(--color-secundario);
     height: 3px;
     width: 0;
     left: 0;
@@ -79,11 +79,12 @@
 
 
 .bi-cart-fill{
-    color:#4A55A2;
+    color:var(--color-secundario);
+    font-size: 25px;
 }
 
 .bi-house-door-fill{
-    color:#4A55A2;
+    color:var(--color-secundario);
     font-size: 25px;
 }
 

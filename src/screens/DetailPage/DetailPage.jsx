@@ -8,7 +8,7 @@ const DetailPage = () => {
     const {id} = useParams()
     const {getProductById, addProductCart, isInCart, getProductCartById} = useCustomContext()
     const [productDetail, setProductDetail] = useState(isInCart(id) ? getProductCartById(id) : getProductById(id))
-    
+
   return (
     <div className='detailPageContainer'>
       <div className='productInfo'>
@@ -21,23 +21,26 @@ const DetailPage = () => {
           <h2>$ {productDetail.precio}</h2>
         </div>
         <div className='descriptionProduct'>
-          <p>Description: <br/> {productDetail.descripcion}</p>
+          <div className='containerDescriptionInfo'>
+            <h2>Description :</h2>
+            <p>{productDetail.descripcion}</p>
+          </div>
           <div className='cajaDeColores'>
             <div className='tituloColors'>
-              <h3 >colors:</h3>
+              <h3 >Colors:</h3>
             </div>
             <div className='contenedorDeColores'>
               <div className='primerColor'>
                 <i className="bi bi-circle-fill"></i>
-                <p>black</p>
+                <p>Black</p>
               </div>
               <div className='segundoColor'>
                 <i className="bi bi-circle-fill"></i>
-                <p>orange</p>
+                <p>Orange</p>
               </div>
               <div className='tercerColor'>
                 <i className="bi bi-circle-fill"></i>
-                <p>green</p>
+                <p>Green</p>
               </div>
             </div>
           </div>

@@ -3,10 +3,10 @@
     display: flex;
     justify-content: center;
     gap: 12.9vw;
-    background-color: #F7F8FA;
-    border-top: 3px solid #EDEFF2;
+    border-top: 3px solid var(--color-secundario);
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: var(--color-terciario);
 }
 
 /* primer columna */
@@ -18,15 +18,14 @@
 }
 
 .primerColumna h2{
-    color: #4D5E80;
+    color: var(--color-secundario);
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px; /* 166.667% */
 }
 
 .primerColumna p{
-    color: #ADB8CC;
+    color: #866e54;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -39,7 +38,7 @@
     gap: 10vw;
 }
 .columnasMedio{
-    color: #6B7A99;
+    color: var(--color-secundario);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -49,11 +48,10 @@
 
 /* tercer columnas */
 .tercerColumna{
-    color:  #ADB8CC;
+    color:  #866e54;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px; /* 166.667% */
     display: flex;
     flex-direction: column;
     gap: 2vh;

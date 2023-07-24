@@ -1,7 +1,4 @@
 
-.detailPageContainer{
-    /* background-color: #F7F8FA */
-}
 /* product name y categoria */
 .productInfo{
     display: flex;
@@ -14,18 +11,18 @@
 }
 
 .productInfo h2{
-    color:#4D5E80;   
-    font-size: 24px;
+    color:var(--color-secundario);   
+    font-size: 32px;
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
 }
 
 .productInfo h3{
-    color:#7D8FB3;
-    font-size: 10px;
+    color:#866e54;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 20px;
 }
 /* contenedor del producto y de la descripcion */
@@ -46,10 +43,11 @@
     align-items: center;
     border-radius: 12px;
     gap: 1.7vw;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
 .detailPageProduct h2{
-    color: #6B7A99;
+    color: var(--color-secundario);
     text-align: center;
     font-size: 25px;
     font-style: normal;
@@ -64,11 +62,24 @@
     display: flex;
     flex-direction: column;
     gap: 3vh;
-    /* margin-left: 100px; */
+}
+
+.containerDescriptionInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.descriptionProduct h2{
+    color: var(--color-secundario);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
 }
 
 .descriptionProduct p{
-    color: #4D5E80;
+    color: #866e54;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -80,12 +91,14 @@
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    color: #6B7A99;
-    gap: 1vh;
-    height: 20vh;
+    color: var(--color-secundario);
+    gap: 2vh;
+    margin: auto;
+    height: 17vh;
+    width: 70%;
     border-radius: 12px;
-    background-color: #F7F8FA;
-    border: 3px solid #EDEFF2;
+    border: 3px solid var(--color-secundario);
+    display: inline-block;
 }
 
 .tituloColors{
@@ -93,21 +106,20 @@
     font-style: normal;
     font-weight: 700;
     line-height: 25px;
-    margin-top: 15px;
-    padding-left: 20px;
+    padding: 1vh 1vw;
+    border-bottom: 3px solid var(--color-secundario);
 }
 .contenedorDeColores{
     display: flex;
-    padding: 3vh 1vw;
-    gap: 23.5vw;
-    border-top: 3px solid #EDEFF2;
+    justify-content: space-around;
+    padding: 1.5vh 0vw;
 }
 
 .contenedorDeColores div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1vh;
+    gap: 0.5vh;
 }
 
 .primerColor i{

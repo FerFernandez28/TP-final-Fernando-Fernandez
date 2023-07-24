@@ -1,17 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useCustomContext } from '../../ContextProvider/ContextProvider'
 import { ProductCard, ProductCartCard } from '../../Components'
 import './CartPage.css'
 
 const CartPage = () => {
-  const {cart, getTotal} = useCustomContext()
-  console.log(getTotal())
+  const { cart, getTotal, clearCart } = useCustomContext();
+  const [cartIsEmpty, setCartIsEmpty] = useState(false);
+
+  const onClickAddProduct = () => {
+    // Mostrar el mensaje de éxito al realizar la compra
+    Swal.fire(
+      '¡Thanks for your Purchase!',
+      '¡Enjoy!',
+      'success'
+    );
+
+    // Vaciar el carrito al hacer clic en el botón de checkout
+    clearCart();
+
+    // Actualizar el estado para mostrar el mensaje "Tu carrito está vacío"
+    setCartIsEmpty(true);
+  };
+
   return (
     <>
       {cart.length > 0 ? (
         <div className='containerCartPage'>
           <div className='tituloCart'>
-            <h2 >Shopping Cart</h2>
+            <h2>Shopping Cart</h2>
           </div>
           <div className='containerCarrito'>
             <div className='productosCarrito'>
@@ -37,19 +53,18 @@ const CartPage = () => {
                 <p>
                   This order is in USD. Applicable taxes, shipping, coupons or special offers will be applied at Checkout.
                 </p>
-                <button>Checkout</button>
+                <button onClick={onClickAddProduct}>Checkout</button>
               </div>
             </div>            
           </div>
           
         </div>
       ) : (
-        <h2>No has comprado nada aún</h2>
+        <div className='emptyCart'><h2>Your cart is empty</h2></div>
       )}
     </>
   );
 };
-
 
 
 export default CartPage
