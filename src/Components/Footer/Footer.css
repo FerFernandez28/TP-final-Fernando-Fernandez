@@ -58,6 +58,49 @@
     cursor: default;
 }
 
+@media (max-width: 767px){
+    .containerFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 5vw;
+        padding-left: 80px;
+    }
+    
+    /* primer columna */
+    .primerColumna{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    
+    .primerColumna h2{
+        font-size: 23px;
+    }
+    
+    .primerColumna p{
+        font-size: 13px;
+    }
+    
+    /* columnas del medio */
+    .containerColumnasMedio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10vw;
+    }
+    .columnasMedio{
+        font-size: 14px;
+        text-align: left;
+    }
+    
+    /* tercer columnas */
+    .tercerColumna{
+        text-align: left;
+        gap: 2vh;
+    }
+}
+
 
 @media (max-width: 500px) {
     .containerFooter{

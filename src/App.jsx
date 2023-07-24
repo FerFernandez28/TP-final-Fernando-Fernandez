@@ -1,9 +1,7 @@
 import React from 'react'
 import './App.css'
-import { Footer, Header, ProductCard } from './Components'
-
-import { NavLink, Route, Routes } from 'react-router-dom'
-import { useCustomContext } from './ContextProvider/ContextProvider'
+import { Header } from './Components'
+import {Route, Routes } from 'react-router-dom'
 import { CartPage, ContactPage, DetailPage, HomePage } from './screens'
 
 function App() {
