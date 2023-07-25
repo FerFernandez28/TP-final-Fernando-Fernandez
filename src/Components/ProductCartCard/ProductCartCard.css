@@ -50,7 +50,6 @@
 }
 
 .btn-Remove{
-    background-color: violet;
     cursor: pointer;
     padding: 10px;
     border: 2px solid var(--color-secundario);
@@ -59,4 +58,19 @@
     font-weight: 500;
     color: var(--color-secundario);
     background-color: var(--color-principal);
+}
+
+@media (max-width:480px){
+    .productoCartCardContainer{
+        width: 100%;
+    }
+    
+    .productoCartCardContainer:hover {
+        box-shadow: none;
+        transform: none;
+    }
+    
+    .productoCartCardInfo{
+        gap: 1vh;
+    }
 }

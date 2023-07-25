@@ -54,7 +54,7 @@ const ContactPage = () => {
         <div>
           <button className='btn-Submit' type='submit'>SEND</button>
           {
-            showAlert && <div className="alert-fade">Tu formulario fue enviado!</div>
+            showAlert && <div className="alert-fade">Enviado!</div>
           }
         </div>
       </form>
