@@ -78,10 +78,30 @@
         gap: 2.5vh;
         transition: none;
     }
-    
+    .productCardContainer:hover .containerInfo {
+        opacity: none;
+    }
+
+    .productCardContainer:hover {
+        box-shadow: none;
+        transform: none;
+    }
     /* container info */
     .containerInfo{
         opacity: 1;
     }
 }
+
+@media (max-width: 400px) {
+    .productCardContainer{
+        height: 50vh;
+        gap: 2.5vh;
+        transition: none;
+    }
+    
+    /* container info */
+    .containerInfo{
+        opacity: 1;
+    }
+  }
 

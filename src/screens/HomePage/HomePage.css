@@ -180,3 +180,10 @@
         gap: 15vw;
     }
 }
+
+@media (max-width: 400px){
+    .colorCardInfo{
+        width: 50vw;
+        gap: 20vw;
+    }
+}
