@@ -77,13 +77,13 @@
     transform: scale(0.9);
 }
 
-@media (max-width: 500px){
+@media (max-width: 480px){
+    .containerBotonesCantidad{
+        gap: 2vw;
+    }
     .btnMenosMas{
     border-radius: 8px;
     padding: 0.2vh 1vw;
-    }
-    .containerBotonesCantidad{
-        gap: 2vw;
     }
 }
 

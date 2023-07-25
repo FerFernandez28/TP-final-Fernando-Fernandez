@@ -122,7 +122,6 @@
     }
     .contactNavLink{
         font-size: 25px;
-        border-bottom: 3px solid var(--color-secundario);
     }
     .bi-cart-fill{
         font-size: 27px;
@@ -155,8 +154,8 @@
     }
     /* boton home */
     .btn-Home{       
-        border-radius: 30px;
-        padding: 1vh 2vw;
+        border-radius: 40px;
+        padding: 0.8vh 2.2vw;
         margin-right: 30px;
         border: 3px solid var(--color-secundario);
         
@@ -168,7 +167,6 @@
     }
     .contactNavLink{
         font-size: 23px;
-        border-bottom: 3px solid var(--color-secundario);
     }
     .bi-cart-fill{
         font-size: 27px;

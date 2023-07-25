@@ -94,12 +94,12 @@
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:480px) {
     .formularioUsuario{
         width: 80%;
-        height: 65vh;
-        gap: 3vh;
-        margin-top: 12vh;
+        height: 70vh;
+        gap: 2vh;
+        margin-top: 80px;
     }
     .formularioUsuario h2{
         font-size: 25px;
@@ -108,9 +108,9 @@
     .formularioUsuario label{
         font-size: 18px;
     }
-    .inputNombre-Email{
+    .inputNombre-Email-Asunto{
         font-size: 16px;
-        width: 50vw;    
+        width: 55vw;    
     }
     .btn-Submit{
         width: 25vw;
@@ -120,7 +120,7 @@
         font-size: 22px;
         align-items: center;
         width: 100%;
-        padding-top: 20px;
+        padding-top: 0px;
     }
 }
 

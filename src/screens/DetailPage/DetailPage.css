@@ -135,16 +135,27 @@
     font-size: 40px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .productInfo{
         justify-content: center;
-        gap: 10vw;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
         padding: 50px;
+        padding-bottom: 25px;
+    }
+    .productInfo h2{
+        text-align: center;
+
+    }
+    
+    .productInfo h3{
+        text-align: center;
     }
     .detailProductContainer{
         flex-direction: column;
         padding: 2vh 14vw;
-        gap: 2vh;
+        gap: 5vh;
         
     }
     .descriptionProduct{
@@ -154,10 +165,13 @@
     }
     .descriptionProduct p{
         font-size: 18px;
-        text-align: center;
+        text-align: left;
+    }
+    .cajaDeColores{
+        width: 100%;
     }
     .contenedorDeColores{
-        padding: 2vh 1vw;
-        gap: 17.3vw;
+        padding: 1vh 2vw;
+        gap: 12vw;
     }
 }
