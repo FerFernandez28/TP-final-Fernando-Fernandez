@@ -74,8 +74,9 @@
 
 @media (max-width:480px){
     .productCardContainer{
-        height:44vh;
+        height:48vh;
         gap: 2.5vh;
+        transition: none;
     }
     
     /* container info */
