@@ -59,23 +59,9 @@
     font-weight: 900;
 }
 
-
-@media (max-width: 767px){
-    .productCardContainer{
-        height:44vh;
-        gap: 2.5vh;
-    }
-    
-    /* container info */
-    .containerInfo{
-        opacity: 1;
-    }
-}
-
-@media (max-width:480px){
+@media (min-width: 360px) and (max-width: 480px){
     .productCardContainer{
         height:48vh;
-        gap: 2.5vh;
         transition: none;
     }
     .productCardContainer:hover .containerInfo {
@@ -89,19 +75,84 @@
     /* container info */
     .containerInfo{
         opacity: 1;
+        padding-bottom: 20px;
     }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 481px) and (max-width: 767px){
     .productCardContainer{
-        height: 50vh;
-        gap: 2.5vh;
+        height:48vh;
         transition: none;
     }
-    
+    .productCardContainer:hover .containerInfo {
+        opacity: none;
+    }
+
+    .productCardContainer:hover {
+        box-shadow: none;
+        transform: none;
+    }
     /* container info */
     .containerInfo{
         opacity: 1;
+        padding-bottom: 20px;
     }
-  }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .productCardContainer{
+        height:48vh;
+        transition: none;
+    }
+    .productCardContainer:hover .containerInfo {
+        opacity: none;
+    }
+
+    .productCardContainer:hover {
+        box-shadow: none;
+        transform: none;
+    }
+    /* container info */
+    .containerInfo{
+        opacity: 1;
+        padding-bottom: 20px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .productCardContainer{
+        height:48vh;
+        transition: none;
+    }
+    .productCardContainer:hover .containerInfo {
+        opacity: none;
+    }
+
+    .productCardContainer:hover {
+        box-shadow: none;
+        transform: none;
+    }
+    /* container info */
+    .containerInfo{
+        opacity: 1;
+        padding-bottom: 20px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1439px){
+    .productCardContainer{
+        height:48vh;
+        transition: none;
+    }
+    .productCardContainer:hover .containerInfo {
+        opacity: none;
+    }
+
+    .productCardContainer:hover {
+        box-shadow: none;
+        transform: none;
+    }
+    /* container info */
+    .containerInfo{
+        opacity: 1;
+        padding-bottom: 20px;
+    }
+}
 
