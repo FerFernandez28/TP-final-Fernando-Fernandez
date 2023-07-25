@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './ProductCard.css'
 
 
 const ProductCard = ({producto}) => {
   return (
-    <Link to={'/detail/' + producto.id}>
+    <NavLink to={'/detail/' + producto.id}>
         <div className='productCardContainer'>
             <img src={producto.image} width={'100%'} height={'100%'} />
             <div className='containerInfo'>
@@ -14,7 +14,7 @@ const ProductCard = ({producto}) => {
               <h3 className='h3Precio'>$ {producto.precio}</h3>
             </div>
         </div>
-    </Link>
+    </NavLink>
   )
 }
 

@@ -60,11 +60,53 @@
     background-color: var(--color-principal);
 }
 
-@media (max-width:480px){
+@media (min-width: 360px) and (max-width: 480px){
     .productoCartCardContainer{
         width: 100%;
     }
     
+    .productoCartCardContainer:hover {
+        box-shadow: none;
+        transform: none;
+    }
+    
+    .productoCartCardInfo{
+        gap: 1vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    
+    .productoCartCardContainer:hover {
+        box-shadow: none;
+        transform: none;
+    }
+    
+    .productoCartCardInfo{
+        gap: 1vh;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .productoCartCardContainer:hover {
+        box-shadow: none;
+        transform: none;
+    }
+    
+    .productoCartCardInfo{
+        gap: 1vh;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .productoCartCardContainer:hover {
+        box-shadow: none;
+        transform: none;
+    }
+    
+    .productoCartCardInfo{
+        gap: 1vh;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1439px){
     .productoCartCardContainer:hover {
         box-shadow: none;
         transform: none;
