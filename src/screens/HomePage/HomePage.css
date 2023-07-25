@@ -145,26 +145,38 @@
     }
 }
 
-@media (max-width:500px){
+@media (max-width:480px){
     .containerGibson{
-        padding: 40px;
-        font-size: 13px;
-        gap: 10vw;
-        align-items: center;
+        gap: 3vh;
     }
+    .titulos h1{
+        font-size: 50px;
+        font-weight: 500;
+    }
+    
+    .titulos h2{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .containerImagenPrincipal{
+        display: none;
+    } 
+    .bi-search{
+        position: absolute;
+        font-size: 20px;
+        left: 10px;
+        top: 7px;
+    }
+
+
     .inputHomePage{
-        padding: 1vh 8vw;
+        padding: 1vh 10vw;
         width: 280px;
-        font-size: 12px;
     }
+
+    /* columna de los productos */
     .colorCardInfo{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-height: unset;
-        width: 80vw;
-        gap: 2vw;
-        margin-left: 50px;
-        margin-bottom: 10px;
+        width: 50vw;
+        gap: 15vw;
     }
 }

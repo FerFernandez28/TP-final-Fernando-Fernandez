@@ -70,7 +70,17 @@
     .containerInfo{
         opacity: 1;
     }
+}
+
+@media (max-width:480px){
+    .productCardContainer{
+        height:44vh;
+        gap: 2.5vh;
+    }
     
-    
+    /* container info */
+    .containerInfo{
+        opacity: 1;
+    }
 }
 

@@ -93,7 +93,7 @@
      /* containerHeader */
     .containerHeader {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         gap: 15vw;
         padding: 0px;
@@ -134,33 +134,46 @@
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     /* containerHeader */
     .containerHeader {
-        display: flex;
-        padding: 30px;
+        gap: 0vw;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 0px;
     }
-    /* contenedor Your Brand */
-    .brandHeader {
-    font-size: 16px;
+    /* contenedor Logo */
+    .brandHeader{
+        margin: 0px;
+        padding: 0px;
     }
-    .brandHeader i{
-        display: none;
+    
+    .brandHeader img{
+        width: 180px;
+        height: 100px;
+
     }
     /* boton home */
-    .btn-Home{
-        border-radius: 20px;
-        padding: 0.4vh 1.5vw;
+    .btn-Home{       
+        border-radius: 30px;
+        padding: 1vh 2vw;
+        border: 4px solid var(--color-secundario);
         
     }
     .navBarHeader{
-        gap: 10vw;
+        gap: 5vw;
         margin-right: 0px;
+        padding-right: 10px;
     }
     .contactNavLink{
-        font-size: 18px;
+        font-size: 23px;
+        border-bottom: 3px solid var(--color-secundario);
     }
     .bi-cart-fill{
-        font-size: 20px;
+        font-size: 27px;
     }
+    .bi-house-door-fill{
+        font-size: 25px;
+    }
+    
 }
